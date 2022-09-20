@@ -1,5 +1,6 @@
 1. What function do we use to start a session?
-    The function we use to start a session is session_start()
+    The function we use to start a session is session_start() and that it must be the first thing to be included before any html tags
 
 2.Where are these session variables stored?
-    Session variables stored on the server.
+    Session variables stored on the server. Normally session variables are stored until the client server closes the browser, however the use
+    of permanent storage must use database for permanent data storing.
