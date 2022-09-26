@@ -1,5 +1,12 @@
 <?php
    // test cookies if is set, display if set
+   if(!isset($_COOKIE['auth'])) {
+    echo "Cookie is not set!";
+    header("Location: index.php");
+    exit();
+  } else {
+    echo "Cookie '" .  $_COOKIE['auth'] . "' is set!<br>";
+  }
 ?>
 <html lang="en">
 <head>
